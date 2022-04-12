@@ -54,3 +54,7 @@ a {
 .img{
 	display: block;
 }
+
+input, button{
+	margin: 0;
+}
