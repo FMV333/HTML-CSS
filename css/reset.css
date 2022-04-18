@@ -50,3 +50,11 @@ a {
 	text-decoration: none;
 	color: var(--black);
 }
+
+.img{
+	display: block;
+}
+
+input, button{
+	margin: 0;
+}
