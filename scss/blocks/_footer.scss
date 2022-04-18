@@ -1,0 +1,127 @@
+.footer__subscribe{
+    background-image: url(../img/footer-bg.jpg);
+    height: 448px;
+
+    &-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &-info{
+        display: block;
+        align-items:center;
+        width: 360px;
+        padding: 10px;
+        justify-content: center;
+
+        &-img{
+            @include flex-center;
+        }
+        
+        &-text{
+            text-align: center;
+            @include font(20px, 24px, 400, italic);
+        }
+    }
+
+    &-img{
+        width: 96px;
+        margin: 97px 0 30px 0;
+    }
+    
+    &-elm{
+        display: block;
+        padding: 10px 90px 0 100px;
+    }
+    
+    &-title{
+        text-transform: uppercase;
+        @include font(24px, 40px, 700);
+        margin: 150px 0 0 0;
+        text-align: center;
+    }
+    
+    &-text{
+        text-transform: uppercase;
+        @include font(18px, 30px, 400);
+    }
+    
+    &-form{
+        height: 49px;
+        width: 356px;
+        display: flex;
+        margin: 22px 0 0 0;
+    }
+}
+
+.subscribe-form__inp{
+    padding: 7px 22px;
+    width: 256px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #E1E1E1;
+    border:none;
+}
+
+.subscibe-form__btn{
+    width: 100px;
+    background-color: $dark-pink;
+    color: white;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:none;
+
+    &:hover{
+        background-color: #E05C6E;
+    }
+}
+
+.footer__social{
+    height: 80px;
+    background-color: $black;
+
+    &-text{
+        @include font(16px, 19px, 400);
+    }
+    
+    &-icons{
+        @include flex-center;
+    }
+    
+    &-ico{
+        background-color: white;
+        margin: 0 7px 0 0;
+        width: 32px;
+        height: 32px;
+        @include flex-center;
+
+        &:hover{
+            background-color: $dark-pink;
+        }
+    }
+
+    &-svg{
+        width: 15px;
+        height: 15px;
+
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+.footer__wrp{
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
