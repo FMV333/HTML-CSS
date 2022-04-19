@@ -1,0 +1,30 @@
+.feature{
+    background-color: $black;
+    color: $white;
+    
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: block;
+        width: 360px;
+        height: 340px;
+        text-align: center;
+
+        &-img{
+            margin: 100px 0 28px 0;
+        }
+        
+        &-title{
+            margin: 0 0 40px 0;
+            @include font(20px, 24px, 400);
+        }
+        
+        &-text{
+            @include font(14px, 17px, 300);
+        }
+    }
+}
