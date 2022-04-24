@@ -28,3 +28,13 @@
         }
     }
 }
+
+@media (max-width: $descktop-width){
+    .feature{
+        &__list{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
