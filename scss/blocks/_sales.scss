@@ -41,3 +41,31 @@
         }
     }
 }
+
+@media (max-width: $tablet-width){
+    .sales__item{
+        width: 232px;
+        height: 167px;
+        margin: 0 0 32px 0;
+
+        &--woman{
+            background-size: cover;
+            width: 100%;
+        }
+
+        &--man{
+            background-size: cover;
+            width: 100%;
+        }
+
+        &--kids{
+            background-size: cover;
+            width: 100%;
+        }
+
+        &--accesories{
+            width: 342px;
+            background-size: cover;
+        }
+    }
+}

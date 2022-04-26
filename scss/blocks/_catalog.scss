@@ -88,3 +88,14 @@
         color: white;
     }
 }
+
+@media(max-width: $tablet-width){
+    .catalog__item{
+        margin: 15px 0 0 0;
+        max-width: 342px;
+
+        &-img{
+            max-width: 342px;
+        }
+    }
+}

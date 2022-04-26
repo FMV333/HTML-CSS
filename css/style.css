@@ -76,6 +76,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -97,8 +98,18 @@ body {
     width: 735px;
   }
   .container-brand {
-    margin: 0 auto;
     width: 735px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 343px;
+  }
+  .container-brand {
+    width: 343px;
+    position: relative;
   }
 }
 
@@ -149,6 +160,10 @@ body {
 }
 
 .header__item {
+  position: relative;
+}
+
+.header__item-btn {
   position: relative;
 }
 
@@ -213,6 +228,19 @@ body {
 
 .display-block {
   display: block;
+}
+
+@media (max-width: 767px) {
+  .header__item {
+    display: none;
+  }
+  .header__button:focus ~ .brand__title-wrp {
+    padding: 0 0 0 0;
+  }
+  .header__nav {
+    right: 0;
+    z-index: 1;
+  }
 }
 
 .brand {
@@ -297,6 +325,46 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .brand {
+    height: 363px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brand__img {
+    display: none;
+  }
+  .brand__title {
+    font-size: 37px;
+    line-height: 31px;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    right: 0;
+  }
+  .brand__title-wrp {
+    padding: 0 0 0 0;
+    width: 342px;
+  }
+  .brand__title::before {
+    height: 61px;
+    top: -5px;
+  }
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
 .sales__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,6 +422,30 @@ body {
   }
   .sales__item--accesories {
     width: 735px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sales__item {
+    width: 232px;
+    height: 167px;
+    margin: 0 0 32px 0;
+  }
+  .sales__item--woman {
+    background-size: cover;
+    width: 100%;
+  }
+  .sales__item--man {
+    background-size: cover;
+    width: 100%;
+  }
+  .sales__item--kids {
+    background-size: cover;
+    width: 100%;
+  }
+  .sales__item--accesories {
+    width: 342px;
+    background-size: cover;
   }
 }
 
@@ -484,6 +576,16 @@ body {
 .catalog__but:hover {
   background-color: #F16D7F;
   color: white;
+}
+
+@media (max-width: 767px) {
+  .catalog__item {
+    margin: 15px 0 0 0;
+    max-width: 342px;
+  }
+  .catalog__item-img {
+    max-width: 342px;
+  }
 }
 
 .feature {
@@ -720,6 +822,61 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .footer__subscribe {
+    height: 610px;
+    background-size: cover;
+  }
+  .footer__subscribe-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__subscribe-info {
+    width: 342px;
+  }
+  .footer__subscribe-title {
+    margin: 48px 0 0 0;
+    font-size: 21px;
+    line-height: 14px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .footer__subscribe-text {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+  .subscribe-form__inp {
+    width: 263px;
+  }
+  .subscribe-form__btn {
+    width: 80px;
+  }
+  .footer__social {
+    height: 143px;
+  }
+  .footer__social-ico {
+    margin: 0 7px 40px 0;
+  }
+  .footer__wrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .registration__title {

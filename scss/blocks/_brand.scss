@@ -66,3 +66,34 @@
         @include font(29px, 24px, 700);
     }
 }
+
+@media(max-width: $tablet-width){
+    .brand{
+        height: 363px;
+        @include flex-center;
+
+        &__img{
+            display: none;
+        }
+
+        &__title{
+            @include font(37px, 31px, 700);
+            position: absolute;
+            right: 0;
+
+            &-wrp{
+                padding: 0 0 0 0;
+                width: 342px;
+            }
+
+            &::before{
+                height: 61px;
+                top: -5px;
+            }
+        }
+    }
+
+    .brand__sub-title{
+        @include font(24px, 20px, 700);
+    }
+}

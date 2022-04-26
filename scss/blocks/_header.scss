@@ -37,6 +37,10 @@
 
     &__item{
         position: relative;
+
+        &-btn{
+            position: relative;
+        }
     }
     
     &__nav{
@@ -93,4 +97,23 @@
 
 .display-block {
     display: block;
+}
+
+@media(max-width: $tablet-width){
+    .header{
+        &__item{
+            display: none;
+        }
+
+        &__button{
+            &:focus ~ .brand__title-wrp{
+                padding: 0 0 0 0;
+            }
+        }
+
+        &__nav{
+            right: 0;
+            z-index: 1;
+        }
+    }
 }
