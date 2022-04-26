@@ -30,3 +30,14 @@
         background-image: url(../img/accesories-bg.jpg);
     }
 }
+
+@media (max-width: $descktop-width){
+    .sales__item{
+        width: 232px;
+        height: 167px;
+
+        &--accesories{
+            width: 735px;
+        }
+    }
+}

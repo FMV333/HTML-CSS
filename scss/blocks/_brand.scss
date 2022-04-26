@@ -1,8 +1,12 @@
-.brand{
-    display: flex;    
+.brand{  
     background-color: $light-pink;
     margin: 0 0 65px 0;
     
+    &__img{
+        width: 750px;
+        height: 750px;
+    }
+
     &__title{
         @include font(48px, 58px, 900);
         text-transform: uppercase;
@@ -12,7 +16,7 @@
         
         &-wrp{
             flex-grow: 1;
-            padding: 0 0 0 92px;
+            padding: 0 0 0 45px;
             display: flex;
             align-items: center;
             width: 377px;
@@ -37,4 +41,28 @@
 
 .pink-color{
     color: $dark-pink;
+}
+
+@media (max-width: $descktop-width){
+    .brand{
+        &__img{
+            width: 385px;
+            height: 385px;
+        }
+
+        &__title{
+            @include font(44px, 37px, 700);
+            &-wrp{
+                width: 350px;
+            }
+
+            &::before{
+                top: -3px;
+            }
+        }
+    }
+
+    .brand__sub-title{
+        @include font(29px, 24px, 700);
+    }
 }

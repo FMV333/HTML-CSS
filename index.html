@@ -5,31 +5,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__wrp">
             <div>
-                <img src="./img/logo-img.png" alt="icon" class="header__logo">
+                <a href="/" class="header__link">
+                    <img src="./img/logo-img.png" alt="icon" class="header__logo">
+                </a>
                 <img src="./img/icon/loupe-ico.svg" alt="loupe" class="header__loupe">
             </div>
             <ul class="header__list">
-
-
                 <li class="header__item">
                     <button id="burger" class="header__button">
                         <img src="./img/icon/burger-ico.svg" alt="burger-ico">
                     </button>
-
-
-
                     <nav class="header__nav">
-
                         <p class="header__title">menu</p>
-
                         <ul class="header__nav-list">
-
                             <li class="header__nav-item nav-sub-item">
                                 <a href="#" class="nav-sub-item__title">man</a>
                                 <ul class="nav-sub-item__list">
@@ -89,13 +86,9 @@
                             </li>
                         </ul>
                     </nav>
-
-
-
-
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="registration.html" class="header__link">
                         <img src="./img/icon/person-ico.svg" alt="person-ico">
                     </a>
                 </li>
@@ -109,9 +102,11 @@
     </header>
     <main>
         <section class="brand">
-            <img src="./img/man-bg.png" alt="man" class="brand__img">
-            <div class="brand__title-wrp">
-                <h1 class="brand__title">the brand <span class="brand__sub-title">of luxerious <span class="pink-color">fashion</span></span></h1>
+            <div class="container-brand">
+                <img src="./img/man-bg.png" alt="man" class="brand__img">
+                <div class="brand__title-wrp">
+                    <h1 class="brand__title">the brand <span class="brand__sub-title">of luxerious <span class="pink-color">fashion</span></span></h1>
+                </div>
             </div>
         </section>
         <section class="sales">
@@ -307,6 +302,5 @@
         </section>
         </div>
     </footer>
-    <script src="./script.js"></script>
 </body>
 </html>

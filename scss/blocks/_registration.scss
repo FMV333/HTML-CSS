@@ -1,0 +1,154 @@
+.registration__title{
+    background-color: $reg-pink;
+    @include font(24px, 29px 400);
+    color: $dark-pink;
+    padding: 60px 0 60px 230px;
+    text-transform: uppercase;
+}
+
+.registration__menu{
+    display: flex;
+    justify-content: space-between;
+
+    &-form{
+        color: #B1B1B1;
+    }
+
+    &-text{
+        color:black;
+    }
+}
+
+.reg-form{
+    &__name{
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            padding: 64px 0 0 0;
+            color: $black;
+            @include font(20px,16px,300);
+        }
+
+        &-first{
+            border: 1px solid #A4A4A4;
+            margin: 20px 0;
+            width: 360px;
+            padding: 13px 0 16px 18px;
+            @include font(15px,13px,300);
+        }
+
+        &-last{
+            border: 1px solid #A4A4A4;
+            margin: 0 0 30px 0;
+            width: 360px;
+            padding: 13px 0 16px 18px;
+            @include font(15px,13px,300);
+        }
+
+        &-gender{
+            display: flex;
+            height: 20px;
+            align-items: center;
+        }
+
+        &-check{
+            margin: 0 20px 0 10px;
+            @include font(13px,11px,300);
+            color:black;
+        }
+
+        &-male{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+
+            &:checked{
+                background-color: $dark-pink;
+            }
+        }
+
+        &-female{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+
+            &:checked{
+                background-color: $dark-pink;
+            }
+        }
+    }
+
+    &__login{
+        margin-top: 33px;
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            color: $black;
+            @include font(20px,16px,300);
+        }
+
+        &-email{
+            border: 1px solid #A4A4A4;
+            width: 360px;
+            padding: 13px 0 16px 18px;
+            @include font(15px,13px,300);
+            margin: 20px 0;
+        }
+
+        &-pass{
+            border: 1px solid #A4A4A4;
+            width: 360px;
+            padding: 13px 0 16px 18px;
+            @include font(15px,13px,300);
+        }
+
+        &-text{
+            @include font(15px, 13px, 300);
+            margin: 15px 0 39px 0;
+            width: 360px;
+            height: 32px;
+            color: #B1B1B1;
+        }
+    }
+
+    &__btn{
+        background-color: $dark-pink;
+        border: none;
+        @include font(17px, 14px, 400);
+        color: white;
+        text-transform: uppercase;
+        padding: 20px 66px 16px 25px;
+    }
+
+    &__text{
+        &-title{
+            @include font(29px, 24px, 300);
+            text-transform: uppercase;
+        }
+
+        &-text{
+            @include font(29px, 24px, 300);
+        }
+
+        &-point{
+            @include font(29px, 24px, 300);
+        }
+    }
+}
+
