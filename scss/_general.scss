@@ -12,6 +12,7 @@ body {
 
     &-brand{
         display: flex;
+        margin: 0 auto;
     }
 }
 
@@ -33,8 +34,19 @@ body {
         width: 735px;
 
         &-brand{
-            margin: 0 auto;
             width: 735px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: $tablet-width){
+    .container{
+        width: 343px;
+
+        &-brand{
+            width: 343px;
+            position: relative;
         }
     }
 }
