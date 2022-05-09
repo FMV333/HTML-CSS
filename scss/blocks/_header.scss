@@ -121,3 +121,11 @@
         }
     }
 }
+
+.title{
+    background-color: $reg-pink;
+    @include font(24px, 29px 400);
+    color: $dark-pink;
+    padding: 60px 0 60px 230px;
+    text-transform: uppercase;
+}
