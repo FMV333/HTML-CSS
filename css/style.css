@@ -234,6 +234,9 @@ body {
   .header__item {
     display: none;
   }
+  .header__link {
+    margin: 0;
+  }
   .header__button:focus ~ .brand__title-wrp {
     padding: 0 0 0 0;
   }
@@ -585,6 +588,10 @@ body {
   }
   .catalog__item-img {
     max-width: 342px;
+  }
+  .catalog__item-wrp {
+    width: 342px;
+    height: 399px;
   }
 }
 

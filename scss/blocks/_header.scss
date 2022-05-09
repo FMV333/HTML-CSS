@@ -105,6 +105,10 @@
             display: none;
         }
 
+        &__link{
+            margin: 0;
+        }
+
         &__button{
             &:focus ~ .brand__title-wrp{
                 padding: 0 0 0 0;
